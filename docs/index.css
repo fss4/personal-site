@@ -457,7 +457,7 @@ article img,
 article video {
   display: block;
   margin: 0 auto;
-  width: 100%;        /* Force it to fill the column */
+  /*width: 100%;*/        /* Force it to fill the column */
   max-width: 100%;
   height: auto;
   border-radius: 5px;
