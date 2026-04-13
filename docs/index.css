@@ -95,8 +95,17 @@ header p {
 }
 
 /* Add a little padding to ensure spacing is correct between content and nav */
-main {
+main,
+article {
   padding-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure the wrapping div inside article doesn't break layout */
+article > div {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Fix line height when title wraps */
@@ -337,7 +346,7 @@ input {
   appearance: none;
 }
 
-/* Add arrow to  */
+/* Add arrow to select */
 select {
   background-image: linear-gradient(45deg, transparent 49%, var(--text) 51%),
     linear-gradient(135deg, var(--text) 51%, transparent 49%);
@@ -441,11 +450,13 @@ mark {
 }
 
 main img,
-main video {
-  display: block;        /* Take up their own line */
-  margin: 0 auto;        /* Center within the text column */
-  max-width: 100%;       /* Never exceed the container width */
-  height: auto;          /* Preserve aspect ratio */
+main video,
+article img,
+article video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -494,7 +505,7 @@ kbd {
 }
 
 pre {
-  padding: 1rem; /*1.4rem;*/
+  padding: 1rem 1.4rem;
   max-width: 100%;
   overflow: auto;
   overflow-x: auto;
