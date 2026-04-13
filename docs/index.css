@@ -493,7 +493,7 @@ kbd {
 
 pre {
   padding: 1rem; /*1.4rem;*/
-  max-width: 100%;
+  max-width: fit-content;
   overflow: auto;
   overflow-x: auto;
   color: var(--preformatted);
