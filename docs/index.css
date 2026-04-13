@@ -99,12 +99,14 @@ main,
 article {
   padding-top: 1.5rem;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
 /* Ensure the wrapping div inside article doesn't break layout */
 article > div {
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -455,6 +457,7 @@ article img,
 article video {
   display: block;
   margin: 0 auto;
+  width: 100%;        /* Force it to fill the column */
   max-width: 100%;
   height: auto;
   border-radius: 5px;
