@@ -442,8 +442,10 @@ mark {
 
 main img,
 main video {
-  max-width: 100%;
-  height: auto;
+  display: block;        /* Take up their own line */
+  margin: 0 auto;        /* Center within the text column */
+  max-width: 100%;       /* Never exceed the container width */
+  height: auto;          /* Preserve aspect ratio */
   border-radius: 5px;
 }
 
@@ -493,7 +495,7 @@ kbd {
 
 pre {
   padding: 1rem; /*1.4rem;*/
-  max-width: fit-content;
+  max-width: 100%;
   overflow: auto;
   overflow-x: auto;
   color: var(--preformatted);
