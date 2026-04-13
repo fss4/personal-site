@@ -492,7 +492,7 @@ kbd {
 }
 
 pre {
-  padding: 1rem 1.4rem;
+  padding: 1rem; /*1.4rem;*/
   max-width: 100%;
   overflow: auto;
   overflow-x: auto;
